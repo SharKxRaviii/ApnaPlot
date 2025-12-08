@@ -13,7 +13,7 @@ const Listings = () => {
   const [filteredPlots, setFilteredPlots] = useState(plots);
   const [filters, setFilters] = useState({
     search: '',
-    priceRange: [0, 5000000], // Increased max for realism
+    priceRange: [0, 5000000],
     areaRange: [0, 50],
     types: [],
     locations: []

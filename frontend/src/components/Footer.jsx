@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Map, Mail, Phone, Instagram, Facebook, Twitter, ShieldCheck } from 'lucide-react';
+import { Map, Mail, Phone, Instagram, Facebook, Linkedin, ShieldCheck } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -39,10 +39,10 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-6 text-white">Popular Districts</h3>
             <ul className="space-y-3">
-              <li className="text-gray-400 hover:text-white cursor-pointer">Highland Valley North</li>
-              <li className="text-gray-400 hover:text-white cursor-pointer">Riverfront Zone</li>
-              <li className="text-gray-400 hover:text-white cursor-pointer">Industrial Corridor</li>
-              <li className="text-gray-400 hover:text-white cursor-pointer">Green Belt Extension</li>
+              <li className="text-gray-400 hover:text-white cursor-pointer">Rourkela</li>
+              <li className="text-gray-400 hover:text-white cursor-pointer">Jeypore</li>
+              <li className="text-gray-400 hover:text-white cursor-pointer">Angul</li>
+              <li className="text-gray-400 hover:text-white cursor-pointer">Balangir</li>
             </ul>
           </div>
 
@@ -52,15 +52,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-400">
                 <Map className="w-5 h-5 text-green-600 mt-1" />
-                <span>Sector 42, Cyber Park,<br/>Highland Valley, IN 450001</span>
+                <span>Rourkela,<br/>Odisha, 769042</span>
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <Phone className="w-5 h-5 text-green-600" />
-                <span>+91 98765 43210</span>
+                <span>+91 7978300902</span>
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <Mail className="w-5 h-5 text-green-600" />
-                <span>support@apnaplot.com</span>
+                <span>ravikumarsahoo.902@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -74,8 +74,14 @@ const Footer = () => {
           <div className="flex space-x-6">
             <a href="#" className="text-gray-500 hover:text-white transition-colors"><Facebook className="w-5 h-5" /></a>
             <a href="#" className="text-gray-500 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
-            <a href="#" className="text-gray-500 hover:text-white transition-colors"><Twitter className="w-5 h-5" /></a>
+            <a href="#" className="text-gray-500 hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></a>
           </div>
+          <a 
+            href='https://wa.me/917978300902'
+            target='_blank'
+            className="text-sm text-green-600">
+            Developed by | Ravi Kumar Sahoo
+          </a>
         </div>
       </div>
     </footer>

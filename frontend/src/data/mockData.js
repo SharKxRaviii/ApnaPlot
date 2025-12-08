@@ -1,131 +1,149 @@
-
 export const plots = [
   {
     id: "plot-101",
-    title: "Scenic Riverfront Escape",
-    description: "A breathtaking 5-acre parcel located right on the banks of the Clear Creek River. Perfect for a weekend getaway cabin or fishing retreat. Features mature trees and direct water access.",
+    title: "Rourkela Riverside Farmland",
+    description:
+      "A peaceful 5-acre farmland located near the rural outskirts of Rourkela close to the Brahmani river belt. Ideal for a small farmhouse, weekend stay, or fishing spot. Surrounded by mango trees with calm village surroundings.",
     price: 125000,
     area: 5.2,
     areaUnit: "acres",
     type: "Recreational",
     location: {
-      region: "Highland Valley",
-      address: "124 River Bend Rd",
-      coordinates: { lat: 34.56, lng: -112.45 }
+      region: "Rourkela",
+      address: "Near Jhirpani Village, Rourkela Rural",
+      coordinates: { lat: 22.20, lng: 84.80 }
     },
-    features: ["Riverfront", "Mature Trees", "Road Access", "Fishing"],
+    features: ["Riverside", "Village Road Access", "Mango Trees", "Fishing"],
     status: "Available",
-    images: [
-      "https://images.unsplash.com/photo-1609089896222-b92ddc42e7d8",
-      "https://images.unsplash.com/photo-1726699698329-580274efad8f"
-    ],
+    images: ["/plot 2-a.JPG", "/plot 2-b.JPG"],
     agent: {
-      name: "Sarah Jenkins",
-      phone: "(555) 123-4567",
-      email: "sarah@landventures.com"
+      name: "Surendra Behera",
+      phone: "90789-12345",
+      email: "surendra@odishaland.com"
     }
   },
+
   {
     id: "plot-102",
-    title: "Rolling Green Pastures",
-    description: "15 acres of lush, rolling green hills suitable for grazing or building your dream farmhouse. Panoramic views of the surrounding valley.",
+    title: "Jeypore Agricultural Farmland",
+    description:
+      "15 acres of lush green agricultural land on the outskirts of Jeypore. Best suited for paddy, seasonal vegetables, or cattle grazing. The land has mild slopes and open village views.",
     price: 250000,
     area: 15.0,
     areaUnit: "acres",
     type: "Agricultural",
     location: {
-      region: "Highland Valley",
-      address: "450 Green Hills Ln",
-      coordinates: { lat: 34.60, lng: -112.50 }
+      region: "Jeypore",
+      address: "Kunduli Road, Jeypore Rural",
+      coordinates: { lat: 18.86, lng: 82.57 }
     },
-    features: ["Pasture", "Panoramic Views", "Fenced"],
+    features: ["Fertile Soil", "Village Access", "Hill Views"],
     status: "Available",
-    images: [
-      "https://images.unsplash.com/photo-1506260408121-e353d10b87c7",
-      "https://images.unsplash.com/photo-1681902354400-9e9fd5e944ee"
-    ],
+    images: ["/agriculture-1.jpg"],
     agent: {
-      name: "Mike Ross",
-      phone: "(555) 987-6543",
-      email: "mike@landventures.com"
+      name: "Manoj Patra",
+      phone: "98612-54321",
+      email: "manoj@odishaland.com"
     }
   },
+
   {
     id: "plot-103",
-    title: "Wooded Mountain Retreat",
-    description: "Dense forest land backing up to national forest. Ultimate privacy and seclusion. abundant wildlife including deer and turkey.",
+    title: "Angul Forest Edge Plot",
+    description:
+      "A 3.5-acre forest-adjacent plot located near the rural edges of Angul. Filled with sal trees and perfect for a quiet house, nature retreat, or farming. Deer and peacocks are commonly seen.",
     price: 89000,
     area: 3.5,
     areaUnit: "acres",
     type: "Residential",
     location: {
-      region: "Pine Ridge",
-      address: "777 Timber Trail",
-      coordinates: { lat: 34.65, lng: -112.40 }
+      region: "Angul",
+      address: "Jarapada Forest Road, Angul",
+      coordinates: { lat: 20.84, lng: 85.15 }
     },
-    features: ["Wooded", "Privacy", "Hunting Allowed"],
-    status: "Pending",
-    images: [
-      "https://images.unsplash.com/photo-1726699698329-580274efad8f",
-      "https://images.unsplash.com/photo-1653177394290-49e3df333e82"
-    ],
+    features: ["Forest Area", "Privacy", "Rich Greenery"],
+    status: "Available",
+    images: ["/plot 1-a.jpg", "/plot 1-b.jpg"],
     agent: {
-      name: "Sarah Jenkins",
-      phone: "(555) 123-4567",
-      email: "sarah@landventures.com"
+      name: "Surendra Behera",
+      phone: "90789-12345",
+      email: "surendra@odishaland.com"
     }
   },
+
   {
     id: "plot-104",
-    title: "Sunny Desert Acreage",
-    description: "Affordable 10-acre desert plot with stunning sunsets and mountain views. Level topography, ready for off-grid living or solar projects.",
+    title: "Balangir Open Dryland Plot",
+    description:
+      "10 acres of open dryland in a typical Balangir countryside setting. Perfect for solar setup, goat farming, poultry, and rural homestead construction. Wide open sky and sunset-friendly location.",
     price: 45000,
     area: 10.0,
     areaUnit: "acres",
     type: "Residential",
     location: {
-      region: "Sun Valley",
-      address: "88 Cactus Bloom Way",
-      coordinates: { lat: 34.45, lng: -112.60 }
+      region: "Balangir",
+      address: "Patnagarh Village Line, Balangir",
+      coordinates: { lat: 20.70, lng: 83.15 }
     },
-    features: ["Mountain Views", "Level", "Off-grid Potential"],
+    features: ["Open Land", "Level Ground", "Off-grid Potential"],
     status: "Available",
-    images: [
-      "https://images.unsplash.com/photo-1659586554522-51e50bd6bd35",
-      "https://images.unsplash.com/photo-1659586555029-d80feb54c015"
-    ],
+    images: ["/plot 3-a.jpg"],
     agent: {
-      name: "David Chen",
-      phone: "(555) 456-7890",
-      email: "david@landventures.com"
+      name: "Subrat Biswal",
+      phone: "94378-67890",
+      email: "subrat@odishaland.com"
     }
   },
+
   {
     id: "plot-105",
-    title: "Prime Commercial Corner",
-    description: "High visibility 2-acre lot at the intersection of Hwy 9 and County Rd 12. Zoned for commercial use. Great potential for retail or gas station.",
+    title: "Angul Roadside Commercial Spot",
+    description:
+      "A 2-acre roadside commercial plot located near the Angul–Banarpal truck route. Ideal for dhaba, parking zone, warehouse or petrol pump. Very high vehicle movement.",
     price: 450000,
     area: 2.0,
     areaUnit: "acres",
     type: "Commercial",
     location: {
-      region: "Highland Valley",
-      address: "100 Highway 9",
-      coordinates: { lat: 34.55, lng: -112.48 }
+      region: "Angul",
+      address: "Banarpal Main Road, Angul",
+      coordinates: { lat: 20.85, lng: 85.10 }
     },
-    features: ["Highway Access", "Utilities Available", "High Traffic"],
+    features: ["Highway Access", "High Traffic", "Utilities Available"],
     status: "Sold",
-    images: [
-       "https://images.unsplash.com/photo-1758461479768-bdbce375e005",
-       "https://images.unsplash.com/photo-1598209082112-ca535e1f1095"
-    ],
+    images: ["/plot 4-a.jpg", "/plot 4-b.jpg"],
     agent: {
-      name: "Mike Ross",
-      phone: "(555) 987-6543",
-      email: "mike@landventures.com"
+      name: "Manoj Patra",
+      phone: "98612-54321",
+      email: "manoj@odishaland.com"
+    }
+  },
+
+  {
+    id: "plot-106",
+    title: "Rourkela Bypass Commercial Plot",
+    description:
+      "2-acre commercial plot along the Rourkela Vedvyas bypass route. Excellent for showroom, workshop, godown, or small-scale industry. Located close to village settlements.",
+    price: 750000,
+    area: 2.0,
+    areaUnit: "acres",
+    type: "Commercial",
+    location: {
+      region: "Rourkela",
+      address: "Vedvyas Bypass Road, Rourkela",
+      coordinates: { lat: 22.27, lng: 84.82 }
+    },
+    features: ["High Traffic Zone", "Village Access", "Utilities Ready"],
+    status: "Available",
+    images: ["/plot 5-a.jpg", "/plot 5-b.jpg"],
+    agent: {
+      name: "Manoj Patra",
+      phone: "98612-54321",
+      email: "manoj@odishaland.com"
     }
   }
 ];
 
-export const locations = ["Highland Valley", "Pine Ridge", "Sun Valley"];
+export const locations = ["Rourkela", "Jeypore", "Angul", "Balangir"];
+
 export const types = ["Residential", "Agricultural", "Commercial", "Recreational"];
