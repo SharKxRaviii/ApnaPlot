@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { useParams, Link } from "react-router-dom";
 import { plots } from "../data/mockData";
 import { Button } from "../components/ui/button";
@@ -15,6 +15,7 @@ import {
   Calendar,
   ShieldCheck,
 } from "lucide-react";
+import {IconHeart, IconHeartFilled} from "@tabler/icons-react";
 import {
   Carousel,
   CarouselContent,
@@ -25,10 +26,15 @@ import {
 import { Card } from "../components/ui/card";
 
 const PlotDetails = () => {
+  const [favoriteToggle, setFavoriteToggle] = useState(false);
   const { id } = useParams();
   const plot = plots.find((p) => p.id === id);
 
   if (!plot) return <div>Plot not found</div>;
+
+  const handleFavorite = () => {
+    setFavoriteToggle((prev) => !prev);
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 pb-20">
@@ -45,8 +51,15 @@ const PlotDetails = () => {
             <Button variant="ghost" size="icon" className="text-gray-500">
               <Share2 className="w-5 h-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-gray-500">
-              <Heart className="w-5 h-5" />
+
+            
+            <Button onClick={handleFavorite}
+            variant="ghost" size="icon" className="text-gray-500"
+            >
+              { favoriteToggle ?
+                <IconHeartFilled className="w-5 h-5" color= "red" /> :
+                <IconHeart className="w-5 h-5" />
+              }
             </Button>
           </div>
         </div>
