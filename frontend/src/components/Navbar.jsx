@@ -67,9 +67,11 @@ const Navbar = () => {
               </Button>
             </a>
 
+            <Link to={'/post-property'}>
             <Button className="bg-gray-900 hover:bg-gray-800 text-white shadow-md">
               <PlusCircle className="w-4 h-4 mr-2" /> Post Property
             </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -112,9 +114,12 @@ const Navbar = () => {
                   <Phone className="w-4 h-4 mr-2" /> Call
                 </Button>
               </a>
-              <Button className="w-full bg-green-600 hover:bg-green-700 justify-center">
-                Post Property
-              </Button>
+
+              <Link to={'/post-property'}>
+                <Button className="w-full bg-green-600 hover:bg-green-700 justify-center">
+                  Post Property
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

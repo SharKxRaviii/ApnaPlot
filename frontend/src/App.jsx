@@ -6,12 +6,14 @@ import Listings from "./pages/Listings";
 import PlotDetails from "./pages/PlotDetails";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Unauthorized from "./pages/Unauthorized";
 
 // Define the Routing Configuration
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <Unauthorized/>,
     children: [
       {
         path: "/",

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Map, Mail, Phone, Instagram, Facebook, Linkedin, ShieldCheck } from 'lucide-react';
+import { IconBrandX, IconBrandLinkedin } from '@tabler/icons-react';
 
 const Footer = () => {
   return (
@@ -71,10 +72,10 @@ const Footer = () => {
           <p className="text-sm text-gray-500">
             © 2025 ApnaPlot Technologies Pvt Ltd. All rights reserved.
           </p>
-          <div className="flex space-x-6">
-            <a href="#" className="text-gray-500 hover:text-white transition-colors"><Facebook className="w-5 h-5" /></a>
+          <div className="flex space-x-5">
+            <a href="#" className="text-gray-500 hover:text-white transition-colors"><IconBrandX className="w-5 h-5" /></a>
             <a href="#" className="text-gray-500 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
-            <a href="#" className="text-gray-500 hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></a>
+            <a href="#" className="text-gray-500 hover:text-white transition-colors"><IconBrandLinkedin className="w-5 h-5" /></a>
           </div>
           <a 
             href='https://wa.me/917978300902'
