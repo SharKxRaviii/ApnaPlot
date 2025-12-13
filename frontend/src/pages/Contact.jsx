@@ -9,6 +9,7 @@ import { Card } from "../components/ui/card";
 import { useToast } from "../hooks/use-toast";
 
 const Contact = () => {
+  const API_URL = import.meta.env.VITE_API_URL;
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -17,15 +18,50 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    toast({
-      title: "Inquiry Received",
-      description: "Our agent will call you within 2 hours.",
-      className: "bg-green-600 text-white border-none",
-    });
-    setFormData({ name: "", email: "", phone: "", message: "" });
+
+    try {
+      const response = await fetch(`${API_URL}/api/contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullname: formData.name,
+          phone_number: formData.phone,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        toast({
+          title: "Submission Failed",
+          description: data.message || "Something went wrong.",
+          className: "bg-red-600 text-white border-none",
+        });
+        return;
+      }
+
+      toast({
+        title: "Inquiry Received",
+        description: "Our agent will call you within 2 hours.",
+        className: "bg-green-600 text-white border-none",
+      });
+
+      // Reset form after success
+      setFormData({ name: "", email: "", phone: "", message: "" });
+
+    } catch (error) {
+      toast({
+        title: "Network Error",
+        description: "Unable to send inquiry. Try again later.",
+        className: "bg-red-600 text-white border-none",
+      });
+    }
   };
 
   const handleChange = (e) => {

@@ -2,11 +2,21 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import express from "express";
+import cors from 'cors';
 import pool, { pgConnection } from "./src/config/db.js";
 import { createContactTable } from "./src/features/contact/contact.schema.js";
 import { createSendMessage } from "./src/features/contact/contact.controller.js";
 
 const app = express();
+
+// cors
+const corsOptions = {
+    origin: `${process.env.FRONTEND_URL}`,
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 // Initialize DB tables
