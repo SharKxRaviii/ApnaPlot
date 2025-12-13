@@ -73,9 +73,9 @@ const Footer = () => {
             © 2025 ApnaPlot Technologies Pvt Ltd. All rights reserved.
           </p>
           <div className="flex space-x-5">
-            <a href="#" className="text-gray-500 hover:text-white transition-colors"><IconBrandX className="w-5 h-5" /></a>
-            <a href="#" className="text-gray-500 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
-            <a href="#" className="text-gray-500 hover:text-white transition-colors"><IconBrandLinkedin className="w-5 h-5" /></a>
+            <a href="https://x.com/RaviKumarS95981" target='_blank' className="text-gray-500 hover:text-white transition-colors"><IconBrandX className="w-5 h-5" /></a>
+            <a href="https://www.instagram.com/web.sha_rk_/" target='_blank' className="text-gray-500 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
+            <a href="https://www.linkedin.com/in/ravi-kumar-sahoo-6a6344260/" target='_blank' className="text-gray-500 hover:text-white transition-colors"><IconBrandLinkedin className="w-5 h-5" /></a>
           </div>
           <a 
             href='https://wa.me/917978300902'

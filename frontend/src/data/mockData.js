@@ -15,7 +15,7 @@ export const plots = [
     },
     features: ["Riverside", "Village Road Access", "Mango Trees", "Fishing"],
     status: "Available",
-    images: ["/plot 2-a.JPG", "/plot 2-b.JPG"],
+    images: ["/plot_2-a.jpg", "/plot_2-b.jpg", "/plot_2-c.jpg"],
     agent: {
       name: "Surendra Behera",
       phone: "90789-12345",
@@ -39,7 +39,7 @@ export const plots = [
     },
     features: ["Fertile Soil", "Village Access", "Hill Views"],
     status: "Available",
-    images: ["/agriculture-1.jpg"],
+    images: ["/Agri-a.jpg", "/Agri-b.jpg", "/Agri-c.jpg"],
     agent: {
       name: "Manoj Patra",
       phone: "98612-54321",

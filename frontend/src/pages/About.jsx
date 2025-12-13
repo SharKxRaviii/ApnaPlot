@@ -59,7 +59,7 @@ const About = () => {
             {/* Optimized Image */}
             <div className="order-1 md:order-2 relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                <img 
-                 src={optimizeImage("https://images.unsplash.com/photo-1506260408121-e353d10b87c7", 800)} 
+                 src={optimizeImage("/About-img.jpg", 800)} 
                  alt="Land surveying team" 
                  className="w-full h-full object-cover"
                  loading="lazy"

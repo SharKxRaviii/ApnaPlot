@@ -16,7 +16,7 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <img 
             // Image is optimized for width and set to eager loading
-            src={optimizeImage("https://images.unsplash.com/photo-1758461479768-bdbce375e005", 1920)}
+            src={optimizeImage("/Home-banner.jpg", 1920)}
             alt="Vast, green Indian landscape" 
             className="w-full h-full object-cover"
             loading="eager"
