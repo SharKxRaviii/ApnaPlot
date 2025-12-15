@@ -1,4 +1,4 @@
-import pool from "../../config/db.js";
+import {pool} from "../../config/db.js";
 
 export const createSendMessageRepo = async ({ fullname, phone_number, email, message }) => {
   const query = `
